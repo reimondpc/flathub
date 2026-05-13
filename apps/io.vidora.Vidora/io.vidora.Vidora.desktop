@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Vidora
+Comment=Reproductor multimedia para Linux Desktop
+Exec=vidora %U
+Icon=io.vidora.Vidora
+Terminal=false
+Type=Application
+Categories=AudioVideo;Player;Video;
+Keywords=video;player;media;multimedia;
+StartupNotify=true
+StartupWMClass=vidora
+MimeType=video/mp4;video/x-matroska;video/webm;video/quicktime;video/x-msvideo;video/x-m4v;video/mpeg;video/3gpp;video/mp2t;application/x-mpegURL;

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.vidora.Vidora</id>
+  <name>Vidora</name>
+  <summary>Reproductor multimedia para Linux Desktop</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>
+      Vidora es un reproductor multimedia de código abierto diseñado específicamente
+      para Linux Desktop. Construido con Flutter, ofrece una experiencia moderna y
+      ligera para reproducir videos locales.
+    </p>
+    <p>Características principales:</p>
+    <ul>
+      <li>Soporte para múltiples formatos de video (MP4, MKV, WebM, AVI, MOV, etc.)</li>
+      <li>Gestión de playlists - crea y guarda listas de reproducción</li>
+      <li>Atajos de teclado para control total</li>
+      <li>Apertura de archivos con doble clic</li>
+      <li>Restauración automática de sesión</li>
+      <li>Soporte para caracteres especiales en nombres de archivo</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.vidora.Vidora.desktop</launchable>
+  <url type="homepage">https://github.com/reimondpc/vidora</url>
+  <url type="bugtracker">https://github.com/reimondpc/vidora/issues</url>
+  <developer_name>Vidora Team</developer_name>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-05-10">
+      <description>
+        <p>Primera versión estable de Vidora</p>
+        <ul>
+          <li>Reproducción de video local</li>
+          <li>Gestión de playlists</li>
+          <li>Soporte para múltiples formatos</li>
+          <li>Asociación de archivos</li>
+          <li>Restauración de sesión</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <categories>
+    <category>Video</category>
+    <category>Player</category>
+    <category>AudioVideo</category>
+  </categories>
+  <keywords>
+    <keyword>video</keyword>
+    <keyword>player</keyword>
+    <keyword>multimedia</keyword>
+    <keyword>reproductor</keyword>
+    <keyword>linux</keyword>
+  </keywords>
+  <mime_types>
+    <mime_type>video/mp4</mime_type>
+    <mime_type>video/x-matroska</mime_type>
+    <mime_type>video/webm</mime_type>
+    <mime_type>video/quicktime</mime_type>
+    <mime_type>video/x-msvideo</mime_type>
+    <mime_type>video/x-m4v</mime_type>
+    <mime_type>video/mpeg</mime_type>
+    <mime_type>video/3gpp</mime_type>
+    <mime_type>video/mp2t</mime_type>
+    <mime_type>application/x-mpegURL</mime_type>
+  </mime_types>
+</component>

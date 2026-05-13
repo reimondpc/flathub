@@ -1,0 +1,43 @@
+app-id: io.vidora.Vidora
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+command: vidora
+
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --share=network
+  - --filesystem=home
+  - --talk-name=org.freedesktop.Notifications
+
+modules:
+  - name: vidora
+    buildsystem: simple
+    build-commands:
+      - install -D vidora /app/bin/vidora
+      - install -d /app/lib
+      - cp -r lib/* /app/lib/
+      - install -d /app/data
+      - cp -r data/* /app/data/
+      - install -Dm644 io.vidora.Vidora.desktop /app/share/applications/io.vidora.Vidora.desktop
+      - install -Dm644 io.vidora.Vidora.metainfo.xml /app/share/metainfo/io.vidora.Vidora.metainfo.xml
+      - install -Dm644 io.vidora.Vidora.png /app/share/icons/hicolor/256x256/apps/io.vidora.Vidora.png
+      - install -Dm644 io.vidora.Vidora.png /app/share/icons/hicolor/256x256@2/apps/io.vidora.Vidora.png
+      - install -Dm644 io.vidora.Vidora.png /app/share/icons/hicolor/128x128/apps/io.vidora.Vidora.png
+      - install -Dm644 io.vidora.Vidora.png /app/share/icons/hicolor/64x64/apps/io.vidora.Vidora.png
+      - install -Dm644 io.vidora.Vidora.png /app/share/icons/hicolor/48x48/apps/io.vidora.Vidora.png
+      - install -Dm644 io.vidora.Vidora.png /app/share/icons/hicolor/32x32/apps/io.vidora.Vidora.png
+      - chmod +x /app/bin/vidora
+    sources:
+      - type: archive
+        url: https://github.com/reimondpc/vidora/releases/download/v1.0.0/vidora.tar.gz
+        sha256: 85bdc247da054f6039725dc04d7c3144c2f9e7235f59b9e39363ebdb3a04ab18
+      - type: file
+        path: io.vidora.Vidora.desktop
+      - type: file
+        path: io.vidora.Vidora.metainfo.xml
+      - type: file
+        path: io.vidora.Vidora.png
